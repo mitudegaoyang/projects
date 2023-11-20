@@ -5,7 +5,7 @@
 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-<title>qms</title>
+<title>cbms</title>
 
 
 <style type="text/css">
@@ -328,56 +328,34 @@ kbd {
 
 <body>
 
-<h1 id="toc_0">qms 技术栈</h1>
+<h1 id="toc_0">cbms 技术栈</h1>
 
 <ol>
-<li>3D card 实现九宫格卡片交互效果
-<img src="./images/1%E4%B9%9D%E5%AE%AB%E6%A0%BC.jpg" alt="dashboard">
+<li>Antd ProList 实现<a href="packages/setting-ui/src/routes/period/components/smpList.tsx">数据卡片</a>
+<img src="./images/3%E5%9F%BA%E7%A1%80%E8%AE%BE%E7%BD%AE.jpg" alt="ProList">
+<img src="./images/5%E5%9F%BA%E7%A1%80%E8%AE%BE%E7%BD%AE-%E7%BB%A9%E6%95%88%E6%96%B9%E6%A1%88.jpg" alt="ProList">
 
 <ol>
-<li><a href="https://codepen.io/robin-dela/pen/jVddbq">3D card - 卡片交互效果</a></li>
-<li><a href="https://codepen.io/smpnjn/pen/qBVPvpZ">Flippable Playing Cards - 卡片交互效果</a></li>
+<li>数据超长缩略</li>
+<li>空数据处理</li>
 </ol></li>
-<li>tgg-large-screen 实现数据大屏全屏缩放效果
-<img src="./images/2%E6%95%B0%E6%8D%AE%E5%A4%A7%E5%B1%8F.jpg" alt="dashboard"></li>
-<li>react-transition-group 实现数据大屏横向切换效果
-<img src="./images/3%E6%95%B0%E6%8D%AE%E5%A4%A7%E5%B1%8F.jpg" alt="dashboard">
+<li>Antd ProTable 实现<a href="packages/setting-ui/src/routes/account/components/accountList.tsx">树形列表</a>
+<img src="./images/4%E5%9F%BA%E7%A1%80%E8%AE%BE%E7%BD%AE-%E4%BC%9A%E8%AE%A1%E7%A7%91%E7%9B%AE.jpg" alt="ProTable">
+<img src="./images/11%E7%B3%BB%E7%BB%9F%E7%AE%A1%E7%90%86.jpg" alt="ProTable">
 
 <ol>
-<li>使用 location 承接 <code>trend</code> 标记滚动方向</li>
-<li>使用 CSSTransition 实现横向滚动特效</li>
-<li>横屏切换加载时添加 load 效果，避免白屏</li>
+<li>存在子集复选、操作按钮禁用</li>
+<li>未勾选复选框 公共操作按钮禁用</li>
 </ol></li>
-<li><a href="https://cloud-charts.gitee.io/example/Recommendation">cloud-charts</a> 实现图表
-<img src="./images/4%E5%8C%BB%E5%8A%A1%E4%B8%BB%E9%A1%B5.jpg" alt="cloud-charts">
-<img src="./images/9%E4%B8%B4%E5%BA%8A%E7%A7%91%E5%AE%A4%E7%AE%A1%E7%90%86.jpg" alt="cloud-charts">
-<img src="./images/11%E8%B4%A8%E6%8E%A7%E6%A3%80%E6%9F%A5.jpg" alt="cloud-charts">
+<li>Antd ProTable 实现标准表格
+<img src="./images/8%E9%A2%84%E7%AE%97%E4%BB%BB%E5%8A%A1.jpg" alt="ProTable"></li>
+<li>editable-table 实现<a href="packages/setting-ui/src/routes/performance/components/performanceForm.tsx">可编辑表格</a>
+<img src="./images/6%E5%9F%BA%E7%A1%80%E8%AE%BE%E7%BD%AE-%E7%BB%A9%E6%95%88%E6%96%B9%E6%A1%88-%E8%AF%A6%E6%83%85.jpg" alt="editable">
 
 <ol>
-<li>使用 Wline 实现折线图</li>
-<li>使用 Wbar 实现柱图</li>
-<li>使用 Wpie 实现环图</li>
-<li>使用 Wlinebar 实现线柱图</li>
-<li>使用 Wnightingale 实现玫瑰图</li>
+<li>数据联动编辑 指标属性=&gt;比较方法=&gt;计量单位</li>
+<li>多行数据存储删除 <code>array.filter()</code></li>
 </ol></li>
-<li>organization-graph 实现组织架构
-<img src="./images/6%E5%A7%94%E5%91%98%E4%BC%9A%E7%AE%A1%E7%90%86%E4%B8%BB%E9%A1%B5.jpg" alt="organization"></li>
-<li>Antd pro-components 实现标准表格
-<img src="./images/7%E8%AF%84%E5%AE%A1%E7%AC%AC%E4%B8%80%E9%83%A8%E5%88%86.jpg" alt="ProTable">
-<img src="./images/14%E7%B3%BB%E7%BB%9F%E7%AE%A1%E7%90%86-%E7%A7%91%E5%AE%A4%E7%AE%A1%E7%90%86.jpg" alt="ProTable">
-<img src="./images/15%E7%B3%BB%E7%BB%9F%E7%AE%A1%E7%90%86-%E7%94%A8%E6%88%B7%E7%AE%A1%E7%90%86.jpg" alt="ProTable"></li>
-<li>封装顶部数据统计条组件 并支持多种格式展示
-<img src="./images/5%E6%8C%81%E7%BB%AD%E6%94%B9%E8%BF%9B%E4%B8%BB%E9%A1%B5.jpg" alt="topStatistics">
-<img src="./images/10QC%E5%B0%8F%E7%BB%84%E7%AE%A1%E7%90%86.jpg" alt="topStatistics">
-<img src="./images/13%E6%8C%87%E6%A0%87%E7%AE%A1%E7%90%86.jpg" alt="topStatistics">
-
-<ol>
-<li>大小数据量展示</li>
-<li>标红数据处理</li>
-</ol></li>
-<li>使用 <a href="https://designable-antd.formilyjs.org/">formilyjs</a> 实现表单
-<img src="./images/8%E4%BA%BA%E4%BA%8B%E7%AE%A1%E7%90%86-%E5%91%98%E5%B7%A5%E5%85%A5%E8%81%8C.jpg" alt="formilyjs">
-<img src="./images/12%E4%B8%8D%E8%89%AF%E4%BA%8B%E4%BB%B6%E4%B8%8A%E6%8A%A5.jpg" alt="formilyjs"></li>
 </ol>
 
 
